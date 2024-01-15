@@ -21,6 +21,7 @@ public:
    void Start();
    void Stop();
    size_t threadSize() const;
+   bool isRunning() const;
    bool isBusy() const;
    void clearJobs();
    void waitUntilIdle();

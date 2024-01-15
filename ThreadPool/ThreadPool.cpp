@@ -67,6 +67,11 @@ size_t ThreadPool::threadSize() const
    return _threads.size();
 }
 
+bool ThreadPool::isRunning() const
+{
+    return _running;
+}
+
 bool ThreadPool::isBusy() const
 {
    return _running && !_jobQueue.empty();
